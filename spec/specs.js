@@ -34,3 +34,12 @@ describe('isIsosceles', function() {
     expect(isIsosceles(6, 6, 7)).to.equal(true);
   });
 });
+
+describe('isEquilateral', function () {
+  it("is true when all three sides are equal", function() {
+    expect(isEquilateral(6, 6, 6)).to.equal(true);
+  });
+  it("is false when not all three sides are equal", function() {
+    expect(isEquilateral(6, 6, 7)).to.equal(false);
+  });
+});
