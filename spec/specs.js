@@ -9,5 +9,7 @@ describe('isTriangle', function () {
   it("is false when the sum of any two sides are less than or equal to the third", function() {
     expect(isTriangle(1, 2, 7)).to.equal(false);
   });
-
+  it("is true when the sum of any two sides are greater than the third", function() {
+    expect(isTriangle(3, 4, 5)).to.equal(true);
+  });
 });
