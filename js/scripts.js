@@ -31,3 +31,25 @@ var isEquilateral = function(a, b, c) {
     return false;
   }
 }
+
+$(document).ready(function() {
+  $("form#triangle").submit(function(event) {
+    var a = parseInt($("input#a").val());
+    var b = parseInt($("input#b").val());
+    var c = parseInt($("input#c").val());
+
+    if (isTriangle(a, b, c)) {
+      if (isScalene(a, b, c)) {
+        //show scalene results
+      } else if (isIsosceles(a, b, c)) {
+        //show isosceles results
+      } else {
+        //show equilateral results
+      }
+    } else {
+      //show not a triangle
+    }
+
+    event.preventDefault();
+  });
+});
