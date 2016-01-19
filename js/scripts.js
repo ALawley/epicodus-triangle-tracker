@@ -5,3 +5,11 @@ var isTriangle = function(a, b, c) {
   return false;
   }
 }
+
+var isScalene = function(a, b, c) {
+  if ((a !== b) && (a !== c) && (b !== c)) {
+    return true;
+  } else {
+    return false;
+  }
+}

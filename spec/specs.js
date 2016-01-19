@@ -13,3 +13,12 @@ describe('isTriangle', function () {
     expect(isTriangle(3, 4, 5)).to.equal(true);
   });
 });
+
+describe('isScalene', function () {
+  it("is false when any two sides are equal", function() {
+    expect(isScalene(2, 2, 2)).to.equal(false);
+  });
+  it("is true when no two sides are equal", function() {
+    expect(isScalene(2, 3, 4)).to.equal(true);
+  });
+});
