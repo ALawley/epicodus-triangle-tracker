@@ -22,3 +22,15 @@ describe('isScalene', function () {
     expect(isScalene(2, 3, 4)).to.equal(true);
   });
 });
+
+describe('isIsosceles', function() {
+  it("is false when no two sides are equal", function() {
+    expect(isIsosceles(6, 7, 8)).to.equal(false);
+  });
+  it("is false when all three sides are equal", function() {
+    expect(isIsosceles(6, 6, 6)).to.equal(false);
+  });
+  it("is true when only two sides are equal", function() {
+    expect(isIsosceles(6, 6, 7)).to.equal(true);
+  });
+});

@@ -13,3 +13,13 @@ var isScalene = function(a, b, c) {
     return false;
   }
 }
+
+var isIsosceles = function(a, b, c) {
+  if ((a !== b) && (a !== c) && (b !== c)) {
+    return false;
+  } else if (a === b && b === c) {
+    return false;
+  } else {
+    return true;
+  }
+}
