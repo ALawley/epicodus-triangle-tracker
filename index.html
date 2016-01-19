@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Triangle Evaluator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Triangle Evaluator</h1>
+
+      <form id="triangle">
+        <label for="triange">Enter three values to build your triangle</label>
+        <div class="form-group">
+          <label for="a">Side A</label>
+          <input id="a" type="text">
+        </div>
+        <div class="form-group">
+          <label for="b">Side B</label>
+          <input id="b" type="text">
+        </div>
+        <div class="form-group">
+          <label for="c">Side C</label>
+          <input id="c" type="text">
+        </div>
+
+        <button type="submit" class="btn">Find out!</button>
+      </form>
+
+      <div id="result">
+        <p>Your triangle is <span id="triangle-type"></span>!</p>
+      </div>
+      <!-- <div id="error">
+        <p class="error">Please enter a positive numeric value.</p>
+      </div> -->
+    </div>
+  </body>
+</html>

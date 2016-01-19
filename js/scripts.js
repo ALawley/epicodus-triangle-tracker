@@ -40,14 +40,18 @@ $(document).ready(function() {
 
     if (isTriangle(a, b, c)) {
       if (isScalene(a, b, c)) {
-        //show scalene results
+        $('#triangle-type').text("scalene");
+        $('#result').show();
       } else if (isIsosceles(a, b, c)) {
-        //show isosceles results
+        $('#triangle-type').text("isosceles");
+        $('#result').show();
       } else {
-        //show equilateral results
+        $('#triangle-type').text("equilateral");
+        $('#result').show();
       }
     } else {
-      //show not a triangle
+      $('#triangle-type').text("not actually a triangle");
+      $('#result').show();
     }
 
     event.preventDefault();
